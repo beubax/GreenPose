@@ -143,7 +143,7 @@ if __name__ == '__main__':
     parser.add_argument('--train-images-folder', type=str, required=True, help='path to COCO train images folder')
     parser.add_argument('--num-refinement-stages', type=int, default=0, help='number of refinement stages')
     parser.add_argument('--base-lr', type=float, default=4e-5, help='initial learning rate')
-    parser.add_argument('--batch-size', type=int, default=16, help='batch size')
+    parser.add_argument('--batch-size', type=int, default=64, help='batch size')
     parser.add_argument('--batches-per-iter', type=int, default=1, help='number of batches to accumulate gradient from')
     parser.add_argument('--num-workers', type=int, default=8, help='number of workers')
     parser.add_argument('--checkpoint-path', type=str, default= None, required=False, help='path to the checkpoint to continue training from')
@@ -161,7 +161,7 @@ if __name__ == '__main__':
                         help='name of output json file with detected keypoints')
     parser.add_argument('--checkpoint-after', type=int, default=5000,
                         help='number of iterations to save checkpoint')
-    parser.add_argument('--val-after', type=int, default=200,
+    parser.add_argument('--val-after', type=int, default=1000,
                         help='number of iterations to run validation')
     args = parser.parse_args()
 
