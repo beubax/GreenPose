@@ -1,4 +1,4 @@
-# Real-time 2D Multi-Person Pose Estimation on CPU: Lightweight OpenPose
+# GreenPose
 
 ## Requirements
 
